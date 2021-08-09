@@ -3,19 +3,7 @@
 <head>
     <title>WEB1 - HTML</title>
     <meta charset="utf-8">
-    <style>
-        a {
-            color:black;
-            text-decoration: none;
-        }
-        .saw{
-            color:gray;
-        }
-        h1 {
-            font-size:45px;
-            text-align:center;
-        }
-    </style> 
+    <link rel="stylesheet" href="style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S92LH6K4DM"></script>
 <script>
@@ -28,33 +16,39 @@
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html" class="saw">HTML</a></li>
-        <li><a href="2.html"class="saw">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <!--
-    <h1><a href="index.html"><font color="red">WEB</font></a></h1>
-    <ol>
-        <li><a href="1.html"><font color="red">HTML</font></a></li>
-        <li><a href="2.html"><font color="red">>CSS</font></a></li>
-        <li><a href="3.html"><font color="red">JavaScript</font></a></li>
-    </ol>
-    -->
+    <div id="grid">
+        <ol>
+            <li><a href="1.html" >HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <!--
+        <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+        <ol>
+            <li><a href="1.html"><font color="red">HTML</font></a></li>
+            <li><a href="2.html"><font color="red">>CSS</font></a></li>
+            <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+        </ol>
+        -->
+        <div id="article">
+            <h2>HTML</h2>
+            <!--
+            <P>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </P>
+            -->
+            <p><a href="https://www.w3.org/TR/html52/" target="_blank"
+                title="html5 specification">hypertext markup language</a> is the standard markup 
+            language for <strong>creating <u>web</u> pages</strong> and web applications.<br><br>
+            br tag .</p>
+            <img src="coding.jpg" width="100%">
+            <p style="margin-top:45px;">
+            paragraph tag. style margin. 
+            </p>
 
-    <h2>HTML</h2>
-    <P>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </P>
-    <p><a href="https://www.w3.org/TR/html52/" target="_blank"
-        title="html5 specification">hypertext markup language</a> is the standard markup 
-    language for <strong>creating <u>web</u> pages</strong> and web applications.<br><br>
-    br tag .</p>
-    <img src="coding.jpg" width="100%">
-    <p style="margin-top:45px;">
-    paragraph tag. style margin. 
-    </p>
+      </div>
+    </div>
     <P>
         <div id="disqus_thread"></div>
 <script>
