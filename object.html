@@ -18,8 +18,23 @@
         document.write("designer : " + coworkers.designer+"<br>");
         coworkers.bookkeeper = "duru";
         document.write("bookkeeper : "+ coworkers.bookkeeper+"<br>");
-        coworkers["data scientist"] = "taeho";
+        coworkers["data scien tist"] = "taeho";
         document.write("data scientist : "+ coworkers["data scientist"]+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for(var key in coworkers){
+            document.write(key+' : '+coworkers[key]+'<br>');
+        }
+    </script>
+    <H2>Property & Method</H2>
+    <script>
+        coworkers.showAll = function() {
+            for(var key in this){
+            document.write(key+' : '+this[key]+'<br>');
+        }
+    }
+    coworkers.showAll();
     </script>
 </body>
 </html>
