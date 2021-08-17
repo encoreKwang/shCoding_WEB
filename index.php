@@ -5,7 +5,7 @@
     <title></title>
 </head>
     <body>
-        <h1>WEB</h1>
+        <h1><a href="index.php">WEB</a></h1>
         <ol>
             <li><a href = "index.php?id=HTML">HTML</a></li>
             <li><a href = "index.php?id=CSS">CSS</a></li>
@@ -13,13 +13,20 @@
         </ol>
         <h2>
             <?php
+            if(isset($_GET['id'])){
                 echo $_GET['id'];
+            }else{
+                echo "welcome";
+            }
             ?>
         </h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Perspiciatis repellat explicabo officiis quo. 
-        Iste minus illum amet! Commodi nostrum omnis culpa architecto 
-        consequuntur vero numquam natus. 
-        Omnis eum debitis non.
+        <?php
+        if (isset($_GET['id'])){
+            echo file_get_contents("data/".$_GET['id']);
+        }else{
+            echo "hello php";
+        }
+        
+        ?>
     </body>
 </html>
