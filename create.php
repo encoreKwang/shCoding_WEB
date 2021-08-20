@@ -54,5 +54,6 @@ function print_list(){
             <p>
                 <input type="submit">
             </p>
+        </form>
     </body>
 </html>
