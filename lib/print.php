@@ -8,7 +8,9 @@ function print_title(){
 }
 function print_description(){
     if (isset($_GET['id'])){
-        echo htmlspecialchars(file_get_contents("data/".$_GET['id']));
+        //basename은 파일의 경로에서 파일명만을 추출해주는 함수로 부모 디렉토리로 접근을 막음
+        $basename = basename($_GET['id']);
+        echo htmlspecialchars(file_get_contents("data/".$basename));
     }else{
         echo "hello php";
     }
